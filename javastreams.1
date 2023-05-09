@@ -1,0 +1,119 @@
+we cannot access the class directly . we have to create a object to access the class
+import java.io.*;
+io indicates input stream and output stream
+* indicated it includes all files
+
+OOPS:
+Object Oriented programming  
+with this we know real world problem
+CLASS IS BLUEPRINT TEMPLATE OF THE OBJECT 
+OBJECT IS REAL WORLD ENTITY WHICH HAS SOME PROPERTIES AND FUNCTIONALITIES
+let suppose there are 10 students,every student has same properties like name,age
+we can create main class to store data of every student with object...(s2 for student 2)
+inside main class ,variables are called instance variables like name,age etc.,
+
+
+** we are able to access the class within the package
+** if we want to access any class outside the package so to do that we have to import that package
+
+EXAMPLE CODE:
+
+
+
+
+
+CONSTRUCTOR : 1.default constructor (same class) --> does not arguments
+              2.parameterized constructor --> has parameters or arguments
+
+CODE:
+package object_and_class;
+
+public class student {
+	String name;
+	int rollno;
+
+		student() {
+			System.out.println("This is a default constructor");;
+		}
+	}
+O/P: //CLASS IS CREATED 
+
+package object_and_class;
+
+public class Studentuse {
+
+	public static void main(String[] args) {
+		
+		// TODO Auto-generated method stub
+		student s1=new student();
+		s1.name="Samrin";
+		s1.rollno=2434;
+		
+		student s2=new student();
+		s2.name="rehan";
+		s2.rollno=6565;
+		
+		System.out.println(s1.name);
+		System.out.println(s1.rollno);
+		System.out.println(s2.name);
+		System.out.println(s2.rollno);
+	}
+}
+
+O/P:This is a default constructor
+This is a default constructor
+Samrin
+2434
+rehan
+6565
+
+
+TO ACCESS DIRECTLY WITHOUT USING S1.NAME by using parametarized constructor...
+INSTEAD WE HAVE TO WRITE PARAMETER LIKE 
+student(String s,int rn) {
+    name=s;
+    rollno;
+    }
+    
+  public void print() {
+  System.out.println(name+" "+rollno);
+  }
+  
+  CODE:
+ package object_and_class;
+
+public class Studentuse {
+
+	public static void main(String[] args) {
+		
+		// TODO Auto-generated method stub
+		student s1=new student("Vamsi",100);
+		s1.print();
+		}
+}
+
+O/P:Vamsi 100
+
+
+
+PRIVATE:
+BY CREATING METHODS IN CLASS WE ARE ABLE TO ACCESS PRIVATE DATA MEMBERS.
+    
+CODE:
+student(String s,int rn) {
+    name=s;
+    private rollno;
+    }
+  // method 
+  public void setRollNumber(int n) {
+     if(rn<=0)
+     {
+      syso("please enter valid age");
+      }
+      else {
+      
+  
+
+FINAL KEYWORD:
+
+             
